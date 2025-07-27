@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johannes Randhall M. De Jesus - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#home" class="navbar-item">
+                    <h1 class="title">Johannes Randhall M. De Jesus</h1>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navbar-menu">
+                <div class="navbar-start">
+                    <a href="#about" class="navbar-item">About</a>
+                    <a href="#skills" class="navbar-item">Skills</a>
+                    <a href="#projects" class="navbar-item">Projects</a>
+                    <a href="#experience" class="navbar-item">Experience</a>
+                    <a href="#contact" class="navbar-item">Contact</a>
+                </div>
+            </div>
+            <button class="navbar-burger" onclick="toggleMenu()">
+                <span></span>   
+                <span></span>   
+                <span></span>   
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="title">Hi, I'm Johannes Randhall M. De Jesus</h1>
+            <p class="subtitle">Creative Developer & Digital Artist</p>
+            <p class="hero-description">Crafting exceptional digital experiences with modern technologies and innovative design solutions</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="button primary">View My Work</a>
+                <a href="#contact" class="button secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>Your Photo Here</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="content">I'm a passionate full-stack developer with 5+ years of experience building modern web applications. I specialize in creating beautiful, user-friendly digital experiences that solve real-world problems.</p>
+                    <p class="content">My journey in tech started with a curiosity for how things work, which led me to pursue computer science and eventually specialize in web development. I love the challenge of turning complex problems into simple, elegant solutions.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="documentation-section">
+                <h3 class="documentation-title">Documentation & Media</h3>
+                <div class="documentation-grid">
+                    <div class="doc-item">
+                        <div class="doc-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h4>Video Tutorials</h4>
+                        <p>Watch my coding tutorials and project walkthroughs</p>
+                        <a href="videos.html" class="doc-link">View Videos</a>
+                    </div>
+                    <div class="doc-item">
+                        <div class="doc-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h4>Resources</h4>
+                        <p>Download code samples, templates, and guides</p>
+                        <a href="resources.html" class="doc-link">Get Resources</a>
+                    </div>
+                    <div class="doc-item">
+                        <div class="doc-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Certifications</h4>
+                        <p>View my professional certifications and achievements</p>
+                        <a href="certifications.html" class="doc-link">View Certs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">SASS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                        <span class="skill-tag">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="title">Featured Projects</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x200/6366f1/ffffff?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title">E-Commerce Platform</p>
+                                    <p class="subtitle">Modern shopping platform built with React and Node.js</p>
+                                    <div class="project-tags">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">MongoDB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x200/8b5cf6/ffffff?text=Mobile+App+Design" alt="Mobile App Design">
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title">Fitness Tracking App</p>
+                                    <p class="subtitle">Beautiful UI/UX design for fitness tracking mobile app</p>
+                                    <div class="project-tags">
+                                        <span class="tag">React Native</span>
+                                        <span class="tag">Figma</span>
+                                        <span class="tag">Firebase</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x200/a855f7/ffffff?text=Analytics+Dashboard" alt="Analytics Dashboard">
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title">Analytics Dashboard</p>
+                                    <p class="subtitle">Real-time data visualization dashboard for business insights</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Vue.js</span>
+                                        <span class="tag">D3.js</span>
+                                        <span class="tag">Python</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Frontend Developer</h3>
+                        <h4>TechCorp Inc.</h4>
+                        <p class="timeline-date">2022 - Present</p>
+                        <p>Leading frontend development for enterprise applications, mentoring junior developers, and implementing modern React architectures.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <h4>StartupXYZ</h4>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <p>Built scalable web applications from scratch, worked with cross-functional teams, and contributed to product strategy decisions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <h4>WebSolutions Ltd.</h4>
+                        <p class="timeline-date">2019 - 2020</p>
+                        <p>Developed responsive websites and web applications, learned modern development practices, and collaborated with design teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="title">Let's Work Together</h2>
+            <p class="content">Ready to bring your ideas to life? Let's create something amazing together.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>alex@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (234) 567-890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">Johannes Randhall M. De Jesus</h3>
+                    <p class="footer-subtitle">Creative Developer & Digital Artist</p>
+                    <p class="footer-description">Passionate about creating beautiful digital experiences and innovative solutions that make a difference.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Consulting</a></li>
+                            <li><a href="#">Branding</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li><a href="#">React & Next.js</a></li>
+                            <li><a href="#">Node.js & Express</a></li>
+                            <li><a href="#">TypeScript</a></li>
+                            <li><a href="#">Python & Django</a></li>
+                            <li><a href="#">AWS & Docker</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><a href="mailto:alex@example.com">alex@example.com</a></li>
+                            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                            <li><span>San Francisco, CA</span></li>
+                            <li><a href="#">Download Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Johannes Randhall M. De Jesus. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navbar-menu');
+            menu.classList.toggle('is-active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
