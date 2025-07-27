@@ -71,6 +71,22 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: none !important;
+}
+
+.navbar-brand .title:hover {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+}
+
+.navbar-brand a:hover {
+  background: none !important;
 }
 
 .navbar-menu {
@@ -1273,6 +1289,7 @@ body {
     gap: 1rem;
   }
 }
+
 
 
 
