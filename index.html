@@ -400,7 +400,10 @@
     <script>
         function toggleMenu() {
             const menu = document.getElementById('navbar-menu');
+            const body = document.body;
+            
             menu.classList.toggle('is-active');
+            body.classList.toggle('menu-active');
         }
 
         // Smooth scrolling for navigation links
@@ -419,6 +422,7 @@
     </script>
 </body>
 </html>
+
 
 
 

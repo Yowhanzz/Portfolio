@@ -39,6 +39,16 @@ body {
   overflow-x: hidden;
 }
 
+/* Add blur effect to body when menu is active */
+body.menu-active {
+  overflow: hidden;
+}
+
+body.menu-active > *:not(.navbar) {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
 /* Container */
 .container {
   max-width: 1200px;
@@ -140,6 +150,17 @@ body {
   height: 3px;
   background: var(--text-primary);
   transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .navbar-burger {
+    display: flex;
+    z-index: 1001;
+  }
 }
 
 /* Hero Section */
@@ -867,24 +888,50 @@ body {
 @media (max-width: 992px) {
   .navbar-menu {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    background: rgba(18, 18, 26, 0.95);
+    bottom: 0;
+    padding-top: 900px;
+    background: rgba(10, 10, 15, 0.95);
     backdrop-filter: blur(20px);
-    flex-direction: column;
-    padding: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    border-radius: 0 0 15px 15px;
+    text-align: center;
+    z-index: 1;
   }
 
   .navbar-menu.is-active {
-    display: flex;
+    display: block;
+  }
+
+  .navbar-start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .navbar-item {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.5.5rem 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-item:hover {
+    background: rgba(99, 102, 241, 0.2);
+    transform: scale(1.05);
   }
 
   .navbar-burger {
-    display: flex;
+    z-index: 1001;
   }
 
   .hero .title {
@@ -1417,7 +1464,8 @@ body {
       0 0 15px rgba(99, 102, 241, 0.4),
       0 0 30px rgba(139, 92, 246, 0.2);
   }
-  
+ 
+ 
   .floating-circle:nth-child(1) { width: 60px; height: 60px; }
   .floating-circle:nth-child(2) { width: 80px; height: 80px; }
   .floating-circle:nth-child(3) { width: 40px; height: 40px; }
@@ -1425,6 +1473,14 @@ body {
   .floating-circle:nth-child(5) { width: 90px; height: 90px; }
   .floating-circle:nth-child(6) { width: 60px; height: 60px; }
 }
+
+
+
+
+
+
+
+
 
 
 
